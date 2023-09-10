@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FrostFire</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#pagrindinis">FrostFire</a>
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <i class="bx bx-menu" id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a class="active" href="#pagrindinis">Apie</a>
+            <a href="#paslaugos">Paslaugos</a>
+            <a href="#galerija">Galerija</a>
+            <a href="#kontaktai">Kontaktai</a>
+        </nav>
+    </header>
+    <div id="pagrindinis" class="container">
+        <div class="heading">
+            <h1>Sveiki atvykę į "Firefrost"!</h1>
+        </div>
+        <div class="boxx">
+        <div class="box">
+        <div class="text">
+        Ar norėtumėte patirti neįprastą, žavingą ir mokomąją pramogą? </br>Jei taip - <b>tai jūsų vieta!</b> </br></br>Mes, "Frostfire" komanda, jau keletą metų dedame visas pastangas, kad sukurtume nepakartojamą patirtį su skystu azotu.</br>
+
+</br></br><b>Kas mes esame?</b></br></br>
+
+Mes esame patyrę ir įkvepiantys renginių organizatoriai, specializuojantys pramogose su skystu azotu.
+Mūsų patirtis leidžia mums įtraukti tiek vaikus, tiek suaugusius į mūsų renginius.
+Mes ne tik pramogaujame, bet ir mokome apie mokslo ir chemijos stebuklus, leisdami mūsų dalyviams patirti juos pačius.
+
+        </div>
+        </div>
+        <div class="box">
+            <img src="images/ignas.jpg">
+        </div>
+        </div>
+    </div>
+    <div id="paslaugos" class="container">
+        <div class="heading">
+            <h1>Paslaugos</h1>
+        </div>
+        <div class="box">
+            <div class="paslauga">Pirma</div>
+            <div class="paslauga">Antra</div>
+            <div class="paslauga">Trecia</div>
+        </div>
+    </div>
+
+    <div id="galerija" class="container">
+        <div class="heading">
+            <h1>Renginių akimirkos</h1>
+        </div>
+        <div class="box">
+            <div class="dream">
+                <img src="images/1.jpg">
+                <img src="images/5.jpg">
+                <img src="images/3.jpg">
+                <img src="images/4.jpg">
+                <img src="images/2.jpg">
+            </div>
+
+            <div class="dream">
+                <img src="images/3.jpg">
+                <img src="images/2.jpg">
+                <img src="images/5.jpg">
+                <img src="images/4.jpg">
+                <img src="images/1.jpg">
+            </div>
+
+            <div class="dream">
+                <img src="images/1.jpg">
+                <img src="images/4.jpg">
+                <img src="images/2.jpg">
+                <img src="images/3.jpg">
+                <img src="images/5.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id="kontaktai" class="hero">
+        <div class="heading">
+            <h1>Susisiekime!</h1>
+        </div>
+        <div class="boxx">
+        <div class="box">
+        <form method="POST" name="emailContact" action="https://formspree.io/f/mjvqrqpv">
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" name="name" required>
+                    <label for="name"><i class="fas fa-user"></i> Vardas Pavardė</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" name="number" required>
+                    <label for="number"><i class="fas fa-phone-square-alt"></i> Tel. numeris</label>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email"><i class="fas fa-envelope"></i> El. paštas</label>
+            </div>
+
+            <div class="input-group">
+                <textarea id="message" rows="8" name="message" required></textarea>
+                <label for="message"><i class="fas fa-comments"></i> Jūsų žinutė</label>
+            </div>
+            <button type="submit" onclick="SendEmail()">Pateikti <i class="fas fa-paper-plane"></i></button>
+        </form>
+        </div>
+        <div class="box">
+            <div class="text">Uzpildykite forma, praneskite apie savo lukscius ir susisieksime su jumis netrukus</div>
+        </div>
+        </div>  
+    </div>
+<hr/>
+    <div class="contacts">
+        <a href="tel:+37060982477">+37060982477</a>
+        <a href="https://www.instagram.com/ja_ignas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100077352139827" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+</body>
+</html>
