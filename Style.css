@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: myFont;
+    src: url(antaro.otf);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
@@ -12,6 +17,7 @@ html {
 
 body {
     background: white;
+    font-family: myFont;
     /* background-image: url("images/bg.jpg");
     background-size: cover;
     background-position: center; */
@@ -45,11 +51,11 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
 
-.logo {
-    font-size: 2rem;
+.header .logo img{
     color: black;
     text-decoration: none;
     font-weight: 700;
+    height: 40px;
 }
 
 .navbar a {
@@ -214,9 +220,8 @@ body {
     align-items: center;
 }
 
-.hero .boxx .box .text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2rem;
+.hero .boxx .box .textt {
+    font-size: 1.5rem;
 }
 
 form {
@@ -319,9 +324,70 @@ hr {
 .container .box .paslauga {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 32.5%;
-    padding: 200px;
+    margin: 15px;
+    height: 100%;
+    padding: 25px;
     border: 2px solid black;
+}
+
+.container .box .paslauga h1 {
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+}
+
+.container .box .paslauga h1 img {
+    margin: 0px 20px;
+}
+
+.container .box .paslauga ul {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.container .box .paslauga .boxy .upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .box .paslauga .boxy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.container .box .paslauga .boxy .lower {
+    margin-top: auto;
+}
+
+.container .box .paslauga .boxy .upper .upper2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container .box .paslauga .boxy .upper .upper2 ul li {
+    text-align: left;
+    list-style-position: inside;
+}
+
+.container .box .paslauga .boxy .upper li {
+    text-align: center;
+}
+
+.container .box .paslauga .boxy .upper li ul li {
+    list-style: circle;
+}
+.container .box .paslauga .boxy li{
+    margin-left: 10px;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
 }
 
 .success {
@@ -341,15 +407,23 @@ hr {
 }
 
 .container .boxx .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 20px;
 }
 
 .container .boxx .box .text {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
     font-size: 2rem;
+}
+
+.container .boxx .box .text img {
+    height: 50px;
+    width: 50px;
 }
 
 .container .boxx .box img {
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
