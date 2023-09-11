@@ -149,7 +149,7 @@ body {
 }
 
 .container .heading, .hero .heading, .containerr .heading {
-    width: 50%;
+    width: 60%;
     padding-bottom: 50px;
 }
 
@@ -216,6 +216,8 @@ body {
         display: flex;
         justify-content: center;
         margin: 50px;
+        border: none;
+        box-shadow: none;
     }
     .hero .boxx {
         display: flex;
@@ -235,8 +237,8 @@ body {
 }
 
 .hero .boxx .box {
-    width: 50%;
-    margin: 30px;
+    width: 100%;
+    margin: 20px;
 }
 
 .hero h1 {
@@ -351,11 +353,11 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 2px solid black;
     width: 32.5%;
     margin: 15px;
     height: 100%;
     padding: 25px;
-    border: 2px solid black;
 }
 
 .container .box .paslauga h1 {
@@ -387,8 +389,21 @@ hr {
     flex: 1;
 }
 
+.container .box .paslauga .seperate {
+    align-self: center;
+    width: 50%;
+}
+.container .box .bSeperate {
+    display: none;
+}
+
 .container .box .paslauga .boxy .lower {
+    text-align: center;
     margin-top: auto;
+}
+
+.container .box .paslauga .boxy .lower li {
+    text-align: center;
 }
 
 .container .box .paslauga .boxy .upper .upper2 {
@@ -455,12 +470,32 @@ hr {
 }
 
 @media only screen and (max-width:1200px) {
+    .containerr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+    
     .containerr .boxx {
         width: 100%;
         display: flex;
         justify-content: center;
-        border: 1px solid black;
-        box-shadow: 15px 15px 15px lightgrey;
+        border: none;
+        box-shadow: none;
+    }
+
+    .containerr .boxx .text {
+        padding: 30px;
+        font-size: 1.5rem;
+    }
+
+    .containerr .boxx .text img {
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -468,11 +503,19 @@ hr {
     .container .box {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        width: 95%;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .container .box .paslauga {
-        width: 90%;
+        width: 100%;
+        margin: 20px 0;
+        height: 100%;
+        padding: 0;
+        border: none;
+    }
+
+    .container .box .bSeperate {
+        display: block;
     }
 }
