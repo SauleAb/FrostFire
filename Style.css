@@ -561,7 +561,7 @@ hr {
         display: block;
     }
 
-    .container .box .paslauga .boxy .upper li, .container .box .paslauga .boxy .lower li {
+    .container .box .paslauga .boxy .upper li, .container .box .paslauga .boxy .lower li, .container .box .paslauga .boxy .upper .upper1 li, .container .box .paslauga .boxy .upper .upper2 li {
         font-size: 1.7rem;
     }
 
