@@ -13,11 +13,15 @@
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 110px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 body {
     background: white;
     font-family: myFont;
+    max-width: 100%;
+    overflow-x: hidden;
     /* background-image: url("images/bg.jpg");
     background-size: cover;
     background-position: center; */
@@ -92,9 +96,13 @@ body {
         display: inline-flex;
     }
 
-    /* #check:checked~.icons #menu-icon {
+    .header::before {
+        background: rgba(0,0,0,.2);
+    }
+
+    #check:checked~.icons #menu-icon {
         display: none; 
-    } */
+    }
 
     .icons #close-icon {
         display: none;
@@ -135,6 +143,18 @@ body {
     #check:checked~navbar a {
         transform: translateY(0);
     }
+
+    .containerr .boxx .text {
+        justify-content: left;
+    }
+    .containerr .boxx .text .hide {
+        display: block;
+    }
+
+    .containerr .boxx .text img {
+        height: 800px;
+        width: 800px;
+    }
 }
 
 /* galerija */
@@ -146,10 +166,11 @@ body {
     align-items: center;
     text-align: center;
     margin: 110px 20px 0 20px;
+    max-width: 100%;
 }
 
 .container .heading, .hero .heading, .containerr .heading {
-    width: 60%;
+    width: 70%;
     padding-bottom: 50px;
 }
 
@@ -203,6 +224,7 @@ body {
     border: 1px solid black;
     box-shadow: 10px 10px 10px lightgray;
     margin: 200px 350px;
+    background: linear-gradient(white, rgb(236, 233, 233));
 }
 
 .hero .boxx {
@@ -217,6 +239,7 @@ body {
         justify-content: center;
         margin: 50px;
         border: none;
+        background: none;
         box-shadow: none;
     }
     .hero .boxx {
@@ -232,7 +255,12 @@ body {
     }
 
     .hero .boxx .box form {
-        align-items: center;
+        align-items: left;
+        width: 100%;
+    }
+
+    .hero .boxx .box form .row {
+        flex-direction: column;
     }
 }
 
@@ -354,9 +382,10 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid black;
+    background: linear-gradient(white, rgb(236, 233, 233));
     width: 32.5%;
     margin: 15px;
-    height: 100%;
+    height: 900px;
     padding: 25px;
 }
 
@@ -368,7 +397,7 @@ hr {
 }
 
 .container .box .paslauga h1 img {
-    margin: 0px 20px;
+    margin: 10px 20px;
 }
 
 .container .box .paslauga ul {
@@ -389,12 +418,15 @@ hr {
     flex: 1;
 }
 
-.container .box .paslauga .seperate {
+.container .box .paslauga .boxy .lower .border {
+    width: 100%;
     align-self: center;
-    width: 50%;
 }
-.container .box .bSeperate {
-    display: none;
+
+.container .box .paslauga .image {
+    width: 90%;
+    height: 30%;
+    align-self: center;
 }
 
 .container .box .paslauga .boxy .lower {
@@ -403,7 +435,8 @@ hr {
 }
 
 .container .box .paslauga .boxy .lower li {
-    text-align: center;
+    text-align: left;
+    margin: 10px;
 }
 
 .container .box .paslauga .boxy .upper .upper2 {
@@ -425,7 +458,6 @@ hr {
     list-style: circle;
 }
 .container .box .paslauga .boxy li{
-    margin-left: 10px;
     text-align: left;
     font-size: 1.4rem;
     margin-bottom: 20px;
@@ -452,16 +484,21 @@ hr {
 }
 
 .containerr .boxx {
-    width: 70%;
+    width: 85%;
     display: flex;
     justify-content: center;
     border: 1px solid black;
+    background: linear-gradient(white, rgb(236, 233, 233));
     box-shadow: 15px 15px 15px lightgrey;
 }
 
 .containerr .boxx .text {
     padding: 50px;
     font-size: 2rem;
+}
+
+.containerr .box .text .hide {
+    display: none;
 }
 
 .containerr .boxx .text img {
@@ -484,13 +521,14 @@ hr {
         width: 100%;
         display: flex;
         justify-content: center;
+        background: none;
         border: none;
         box-shadow: none;
     }
 
     .containerr .boxx .text {
         padding: 30px;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     .containerr .boxx .text img {
@@ -508,11 +546,11 @@ hr {
     }
 
     .container .box .paslauga {
+        border: 1px solid black;
         width: 100%;
-        margin: 20px 0;
+        margin: 10px 0;
         height: 100%;
         padding: 0;
-        border: none;
     }
 
     .container .box .bSeperate {
