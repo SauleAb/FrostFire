@@ -170,7 +170,7 @@ body {
 }
 
 .container .heading, .hero .heading, .containerr .heading {
-    width: 70%;
+    width: 80%;
     padding-bottom: 50px;
 }
 
@@ -228,7 +228,9 @@ body {
     text-align: center;
     border: 1px solid black;
     box-shadow: 10px 10px 10px lightgray;
-    margin: 200px 350px;
+    margin: 5%;
+    align-self: center;
+    float: center;
     background: linear-gradient(white, rgb(243, 243, 243));
 }
 
@@ -240,7 +242,6 @@ body {
 
 @media only screen and (max-width:1440px) {
     .hero {
-        display: flex;
         justify-content: center;
         margin: 50px 5px;
         border: none;
@@ -391,7 +392,7 @@ hr {
     background: linear-gradient(white, rgb(243, 243, 243));
     width: 32.5%;
     margin: 15px;
-    height: 900px;
+    height: 930px;
     padding: 25px;
 }
 
