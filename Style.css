@@ -197,8 +197,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-
 @media only screen and (max-width:1400px) {
     .container {
         margin: 10px;
@@ -266,6 +264,14 @@ body {
 
     .hero .boxx .box form .row {
         flex-direction: column;
+    }
+
+    input, textarea {
+        font-size: 30px;
+    }
+
+    .hero .boxx .box .textt {
+        font-size: 3rem;
     }
 }
 
@@ -440,7 +446,7 @@ hr {
 }
 
 .container .box .paslauga .boxy .lower li {
-    text-align: left;
+    text-align: center;
     margin: 10px;
 }
 
@@ -593,7 +599,7 @@ hr {
     }
 
     .container .box .paslauga .boxy .upper li {
-        text-align: left;
+        text-align: center;
     }
 
     .container .box .paslauga h1 {
