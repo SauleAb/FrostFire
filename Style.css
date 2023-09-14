@@ -12,7 +12,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 130px;
+    scroll-padding-top: 140px;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -49,20 +49,26 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(231, 231, 231);
+    background: rgb(230, 252, 252);
     z-index: -1;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.header .logo {
+    display: flex;
+    flex-direction: row;
 }
 
 .header .logo img{
     color: black;
     text-decoration: none;
-    font-weight: 700;
-    height: 60px;
+    height: 80px;
 }
 
 .navbar a {
+    position: relative;
     font-size: 1.5rem;
+    font-weight: bolder;
     color: black;
     border: 2px black;
     text-decoration: none;
@@ -73,9 +79,11 @@ body {
 }
 
 .navbar a:hover {
+    color: black;
     width: 100%;
     color: rgb(94, 92, 92);
 }
+
 
 #check {
     display: none;
@@ -100,7 +108,7 @@ body {
 
     .header::before {
         background: white;
-        height: 115px;
+        height: 125px;
     }
 
     #check:checked~.icons #menu-icon {
@@ -122,7 +130,7 @@ body {
         width: 100%;
         height: 0;
         background: white;
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        box-shadow: 0 .5rem 1rem rgb(230, 252, 252);
         overflow: hidden;
         transition: .3s ease;
     }
@@ -172,7 +180,7 @@ body {
 }
 
 .container .heading, .hero .heading, .containerr .heading {
-    width: 80%;
+    width: 70%;
     padding-bottom: 50px;
 }
 
@@ -231,7 +239,7 @@ body {
     margin: 5%;
     align-self: center;
     float: center;
-    background: linear-gradient(white, rgb(243, 243, 243));
+    background: linear-gradient(white, rgb(230, 252, 252));
 }
 
 .hero .boxx {
@@ -411,7 +419,7 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid black;
-    background: linear-gradient(white, rgb(243, 243, 243));
+    background: linear-gradient(white, rgb(230, 252, 252));
     width: 32.5%;
     margin: 15px;
     height: 930px;
@@ -509,7 +517,7 @@ hr {
     align-items: center;
     text-align: center;
     padding: 0;
-    margin: 110px 0;
+    margin: 120px 0;
 }
 
 .containerr .boxx {
@@ -517,12 +525,16 @@ hr {
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    background: linear-gradient(white, rgb(236, 233, 233));
+    background: linear-gradient(white,rgb(230, 252, 252));
     box-shadow: 15px 15px 15px lightgrey;
 }
 
 .containerr .boxx .text {
     font-size: 2rem;
+}
+
+.containerr .boxx .text h3 {
+    padding-bottom: 20px;
 }
 
 .containerr .boxx .text .column .row {
@@ -540,13 +552,18 @@ hr {
     justify-content: center;
 }
 
+.containerr .boxx .text .column .row .item h3 {
+    color: rgb(51, 51, 185);
+}
+
+
 .container .boxx .text .column {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.containerr .boxx .text img {
+.containerr .boxx .text .column .row .item img {
     height: 50px;
     width: 50px;
 }
