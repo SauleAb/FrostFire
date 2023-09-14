@@ -82,17 +82,21 @@ body {
 }
 
 .icons {
-    font-size: 2.8rem;
+    font-size: 5rem;
     right: 5%;
+    width: 100px;
     color: black;
     cursor: pointer;
     display: none;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 
 @media (max-width: 1400px) {
     .icons {
-        display: inline-flex;
+        display: block;
     }
 
     .header::before {
@@ -332,7 +336,7 @@ button {
     cursor: pointer;
 }
 
-input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label {
+.hero .boxx .box form input:focus~label, .hero .boxx .box form input:valid~label, .hero .boxx .box form textarea:focus~label, .hero .boxx .box form textarea:valid~label {
     top: -35px;
     font-size: 14px;
 }
