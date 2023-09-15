@@ -49,7 +49,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(230, 252, 252);
+    background: rgb(190, 253, 253);
     z-index: -1;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -107,7 +107,7 @@ body {
     }
 
     .header::before {
-        background: white;
+        background: rgb(190, 253, 253);
         height: 125px;
     }
 
@@ -129,8 +129,8 @@ body {
         left: 0;
         width: 100%;
         height: 0;
-        background: white;
-        box-shadow: 0 .5rem 1rem rgb(230, 252, 252);
+        background: rgb(206, 255, 255);
+        box-shadow: 0 .5rem 1rem rgb(190, 253, 253);
         overflow: hidden;
         transition: .3s ease;
     }
@@ -180,14 +180,14 @@ body {
 }
 
 .container .heading, .hero .heading, .containerr .heading {
-    width: 70%;
+    width: 60%;
     padding-bottom: 50px;
 }
 
 .container .heading h1, .hero .heading h1, .containerr .heading h1 {
     font-size: 3em;
     font-weight: bolder;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgb(84, 177, 177);
     padding-bottom: 20px;
 }
 
@@ -211,7 +211,7 @@ body {
 
 @media only screen and (max-width:1400px) {
     .container {
-        margin: 10px;
+        margin: 60px 10px 0;
     }
     .container .box {
         flex-direction: column;
@@ -239,7 +239,7 @@ body {
     margin: 5%;
     align-self: center;
     float: center;
-    background: linear-gradient(white, rgb(230, 252, 252));
+    background: linear-gradient(white, rgb(190, 253, 253));
 }
 
 .hero .boxx {
@@ -419,11 +419,15 @@ hr {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid black;
-    background: linear-gradient(white, rgb(230, 252, 252));
+    background: linear-gradient(white, rgb(190, 253, 253));
     width: 32.5%;
     margin: 15px;
     height: 930px;
     padding: 25px;
+}
+
+.container .box .hide {
+    display: none;
 }
 
 .container .box .paslauga h1 {
@@ -525,7 +529,7 @@ hr {
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    background: linear-gradient(white,rgb(230, 252, 252));
+    background: linear-gradient(white,rgb(190, 253, 253));
     box-shadow: 15px 15px 15px lightgrey;
 }
 
@@ -550,10 +554,6 @@ hr {
     padding: 0;
     align-items: start;
     justify-content: center;
-}
-
-.containerr .boxx .text .column .row .item h3 {
-    color: rgb(51, 51, 185);
 }
 
 
@@ -620,8 +620,9 @@ hr {
         padding: 0;
     }
 
-    .container .box .bSeperate {
+    .container .box .hide {
         display: block;
+        border: 3px solid rgb(190, 253, 253);
     }
 
     .container .box .paslauga .boxy .upper li, .container .box .paslauga .boxy .lower li, .container .box .paslauga .boxy .upper .upper1 li, .container .box .paslauga .boxy .upper .upper2 li {
