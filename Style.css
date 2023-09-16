@@ -140,12 +140,12 @@ body {
     }
 
     #check:checked~.navbar {
-        height: 18.5rem;
+        height: 24rem;
     }
 
     .navbar a {
         display: block;
-        font-size: 2rem;
+        font-size: 3rem;
         margin: 1.5rem 0;
         text-align: center;
     }
@@ -646,6 +646,8 @@ hr {
 
     .container .box .paslauga {
         border: none;
+        background: rgb(235, 248, 248);
+        box-shadow: 0 0 20px 20px rgb(235, 248, 248);
         width: 100%;
         margin: 50px 0;
         height: 100%;
@@ -671,9 +673,5 @@ hr {
 
     .container h3 {
         font-size: 1.3rem;
-    }
-
-    .container .box .paslauga h1 img {
-        display: none;
     }
 }
