@@ -106,13 +106,17 @@ body {
 @media (max-width: 1400px) {
     .icons {
         display: block;
-        font-size: 5rem;
+        font-size: 7rem;
         padding:10px;
+    }
+
+    .header .logo img {
+        height: 120px;
     }
 
     .header::before {
         background: rgb(190, 253, 253);
-        height: 125px;
+        height: 170px;
     }
 
     #check:checked~.icons #menu-icon {
@@ -139,14 +143,18 @@ body {
         transition: .3s ease;
     }
 
+    html {
+        scroll-padding-top: 200px;
+    }
+
     #check:checked~.navbar {
-        height: 24rem;
+        height: 32rem;
     }
 
     .navbar a {
         display: block;
-        font-size: 3rem;
-        margin: 1.5rem 0;
+        font-size: 3.5rem;
+        margin: 2.8rem 0;
         text-align: center;
     }
 
@@ -304,12 +312,12 @@ body {
     .hero .boxx .box {
         display: flex;
         justify-content: center;
+        margin: 2px;
     }
 
     .hero .boxx .box form {
         align-items: left;
         width: 100%;
-        margin: 0 5px;
     }
 
     .hero .boxx .box form .row {
@@ -325,6 +333,7 @@ body {
     }
     input, textarea {
         font-size: 30px;
+        padding: 0;
     }
 
     .hero .boxx .box .textt {
@@ -333,7 +342,6 @@ body {
 
     button {
         height: 50px;
-        align-self: left;
         font-size: 1.5rem;
     }
 }
@@ -610,6 +618,7 @@ hr {
         text-align: center;
         width: 100%;
         padding: 0;
+        margin: 215px 0;
     }
     
     .containerr .boxx {
@@ -645,9 +654,7 @@ hr {
     }
 
     .container .box .paslauga {
-        border: none;
-        background: rgb(235, 248, 248);
-        box-shadow: 0 0 20px 20px rgb(235, 248, 248);
+        box-shadow: 0 0 15px 10px lightgray;
         width: 100%;
         margin: 50px 0;
         height: 100%;
@@ -661,6 +668,7 @@ hr {
     .container .box .paslauga .boxy .upper .upper2 {
         display: flex;
         flex-direction: column;
+        margin-left: 20px;
     }
 
     .container .box .paslauga .boxy .upper li {
