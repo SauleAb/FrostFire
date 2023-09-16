@@ -3,6 +3,8 @@
 <head>
     <title>FrostFire</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="lightbox.css">
+
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet">
     <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js">
@@ -10,7 +12,7 @@
 </head>
 <body>
     <header class="header">
-        <a class="logo" href="#pagrindinis"><img src="images/FrostFiree.png"></a>
+        <a class="logo" href="#pagrindinis"><img src="images/FrostFire.png"></a>
         <input type="checkbox" id="check">
         <label for="check" class="icons">
             <i class="bx bx-menu" id="menu-icon"></i>
@@ -68,7 +70,6 @@
                 </ul>
             </div>
             </div>
-            <hr class="hide">
             <div class="paslauga">
                 <h1><img src="images/milkshake.png" height="65px">Ledų/vaisių šerbeto gaminimas<img src="images/milkshake.png" height="65px"></h1>
                 <div class="boxy">
@@ -91,7 +92,6 @@
                     </ul>
                 </div>
             </div>
-            <hr class="hide">
             <div class="paslauga">
                 <h1><img src="images/brain.png" height="65px"> Viktorina - „Show your br@ins“<img src="images/brain.png" height="65px"></h1>
                 <div class="boxy">
@@ -115,29 +115,19 @@
         <h3>*Atvykimas Vilniuje nemokamas.<br> Užsakymams kituose Lietuvos miestuose taikomas papildomas 0,2€/km mokestis.</h3>
     </div>
 
-    <div id="galerija" class="container">
+    <div id="galerija" class="galerija">
         <div class="heading">
             <h1>RENGINIŲ AKIMIRKOS</h1>
         </div>
-        <div class="box">
-            <div class="dream">
-                <img src="images/vaikai.jpg">
-                <img src="images/vaikuciai.jpg">
-                <img src="images/7.jpg">
-            </div>
-
-            <div class="dream">
-                <img src="images/maistasVaikai.jpg">
-                <img src="images/ignas.jpg">
-                <img src="images/ignaselis.jpg">
-            </div>
-            
-            <div class="dream">
-                <img src="images/vakaiHappy.jpg">
-                <img src="images/20230913181514_IMG_9223.jpg">
-                <img src="images/1.jpg">
-                <img src="images/4.jpg">
-            </div>
+        <div class="gallery">
+                <div class="div1"><a href="images/1.jpg" data-lightbox="renginiai" data-title="Vaikučiai"><img src="images/1.jpg"></a></div>
+                <div class="div2"><a href="images/2.jpg" data-lightbox="renginiai" data-title="Pildomės žinias apie skystą azotą"><img src="images/2.jpg"></a></div>
+                <div class="div3"><a href="images/3.jpg" data-lightbox="renginiai" data-title="Linksma ir interaktyvi gaminimo pamoka"><img src="images/3.jpg"></a></div>
+                <div class="div4"><a href="images/4.jpg" data-lightbox="renginiai" data-title="Nuostabios skysto azoto savybės"><img src="images/4.jpg"></a></div>
+                <div class="div5"><a href="images/5.jpg" data-lightbox="renginiai" data-title="Sveiki! :)"><img src="images/5.jpg"></a></div>
+                <div class="div6"><a href="images/6.jpg" data-lightbox="renginiai" data-title="Su vaikais liūdnų renginių nebūna"><img src="images/6.jpg"></a></div>
+                <div class="div7"><a href="images/7.jpg" data-lightbox="renginiai" data-title="Išmokstame naujų triukų ir iš vaikų"><img src="images/7.jpg"></a></div>
+                <div class="div8"><a href="images/8.jpg" data-lightbox="renginiai" data-title="Renginys"><img src="images/8.jpg"></a></div>
         </div>
     </div>
 
@@ -182,5 +172,6 @@
         <a href="https://www.instagram.com/ja_ignas/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100077352139827" target="_blank"><i class="fa-brands fa-facebook"></i></a>
     </div>
+    <script src="lightbox-plus-jquery.js"></script>
 </body>
 </html>
