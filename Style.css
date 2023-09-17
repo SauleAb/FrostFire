@@ -196,7 +196,7 @@ body {
     padding-bottom: 50px;
 }
 
-.container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1 {
+.container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1{
     font-size: 3em;
     font-weight: bolder;
     border-bottom: 3px solid rgb(84, 177, 177);
@@ -416,6 +416,15 @@ button {
 
 .row .input-group {
     flex-basis: 48%;
+}
+
+.homePage {
+    background-image: url(images/azotas.gif);
+    height: 950px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 /* Contacts */
