@@ -206,6 +206,7 @@ body {
 .homePage {
     display: flex;
     background-image: url(images/blue.gif);
+    object-fit: cover;
     justify-content: center;
     text-align: center;
     height: 950px;
@@ -259,7 +260,7 @@ body {
     }
 
     .homePage {
-        height: 1600px;
+        height: 1700px;
     }
 
 }
