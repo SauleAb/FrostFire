@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background: white;
+    background: black;
     font-family: myFont;
     max-width: 100%;
     overflow-x: hidden;
@@ -197,10 +197,15 @@ body {
 }
 
 .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1{
+    color: white;
     font-size: 3em;
     font-weight: bolder;
     border-bottom: 3px solid rgb(84, 177, 177);
     padding-bottom: 20px;
+}
+
+.hero .heading h1 {
+    color: black;
 }
 
 .homePage {
@@ -219,6 +224,7 @@ body {
     padding-top: 140px;
     color: white;
     font-size: 2rem;
+    text-shadow: 2px 2px rgb(216, 251, 253);
 }
 
 .homePage .heading h1 {
@@ -310,7 +316,7 @@ body {
     flex-direction: column;
     text-align: center;
     border: 1px solid black;
-    box-shadow: 10px 10px 10px lightgray;
+    box-shadow: 10px 10px 10px rgb(216, 251, 253);
     margin: 5%;
     align-self: center;
     float: center;
@@ -460,7 +466,7 @@ button {
 .contacts a {
     margin: 0 5px;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: white;
     margin-left: 20px;
 }
 
@@ -495,6 +501,7 @@ hr {
     justify-content: space-between;
     border: 2px solid black;
     background: linear-gradient(white, rgb(190, 253, 253));
+    box-shadow: 12px 12px 12px rgb(216, 251, 253);
     width: 32.5%;
     margin: 15px;
     height: 930px;
@@ -601,7 +608,7 @@ hr {
     justify-content: center;
     border: 1px solid black;
     background: linear-gradient(white,rgb(190, 253, 253));
-    box-shadow: 15px 15px 15px lightgrey;
+    box-shadow: 15px 15px 15px rgb(216, 251, 253);
 }
 
 .containerr .boxx .text {
@@ -684,7 +691,6 @@ hr {
     }
 
     .container .box .paslauga {
-        box-shadow: 0 0 15px 10px lightgray;
         width: 100%;
         margin: 50px 0;
         height: 100%;
