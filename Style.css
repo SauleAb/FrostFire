@@ -205,7 +205,7 @@ body {
 
 .homePage {
     display: flex;
-    background-image: url(images/azotas.gif);
+    background-image: url(images/yes.gif);
     justify-content: center;
     text-align: center;
     height: 950px;
