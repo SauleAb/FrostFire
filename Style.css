@@ -191,16 +191,38 @@ body {
     max-width: 100%;
 }
 
-.container .heading, .hero .heading, .containerr .heading, .galerija .heading {
+.container .heading, .hero .heading, .containerr .heading, .galerija .heading, .homePage .heading {
     width: 60%;
     padding-bottom: 50px;
 }
 
-.container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1{
+.container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1{
     font-size: 3em;
     font-weight: bolder;
     border-bottom: 3px solid rgb(84, 177, 177);
     padding-bottom: 20px;
+}
+
+.homePage {
+    display: flex;
+    background-image: url(images/azotas.gif);
+    justify-content: center;
+    text-align: center;
+    height: 950px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.homePage .heading {
+    padding-top: 140px;
+    color: white;
+    font-size: 2rem;
+}
+
+.homePage .heading h1 {
+    border-bottom: 8px solid rgb(84, 177, 177);
 }
 
 .container .box {
@@ -233,8 +255,16 @@ body {
         width: 100%;
     }
 
-    .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1 {
+    .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1 {
         font-size: 5rem;
+    }
+
+    .homePage {
+        height: 1500px;
+    }
+
+    .homePage .heading {
+        padding-top: 200px;
     }
 }
 
@@ -416,15 +446,6 @@ button {
 
 .row .input-group {
     flex-basis: 48%;
-}
-
-.homePage {
-    background-image: url(images/azotas.gif);
-    height: 950px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
 }
 
 /* Contacts */
