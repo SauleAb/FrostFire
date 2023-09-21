@@ -22,9 +22,6 @@ body {
     font-family: myFont;
     max-width: 100%;
     overflow-x: hidden;
-    /* background-image: url("images/bg.jpg");
-    background-size: cover;
-    background-position: center; */
     min-height: 100vh;
 }
 
@@ -162,7 +159,7 @@ body {
         border-bottom: none;
     }
 
-    #check:checked~navbar a {
+    #check:checked~.navbar a {
         transform: translateY(0);
     }
 
@@ -225,23 +222,7 @@ body {
     border-bottom: 8px solid rgb(84, 177, 177);
 }
 
-.container .box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
-.container .box .dream {
-    display: flex;
-    flex-direction: column;
-    width: 32.5%;
-}
-
-.container .box .dream img {
-    width: 100%;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
 
 @media only screen and (max-width:1400px) {
     .container {
@@ -482,16 +463,34 @@ hr {
 }
 
 
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container .box .bigBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
 .container .box .paslauga {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid black;
     background: linear-gradient(white, rgb(190, 253, 253));
-    width: 32.5%;
+    width: 40%;
     margin: 15px;
-    height: 930px;
+    height: 800px;
     padding: 25px;
+}
+
+.container .box .bigBox:nth-child(1) .paslauga {
+    height: 550px;
 }
 
 .container .box .paslauga h1 {
@@ -524,6 +523,7 @@ hr {
 }
 
 .container .box .paslauga .boxy .lower .border {
+    color: rgb(84, 177, 177);
     width: 100%;
     align-self: center;
 }
@@ -682,6 +682,9 @@ hr {
         margin: 50px 0;
         height: 100%;
         padding: 0;
+    }
+    .container .box .bigBox {
+        flex-direction: column;
     }
 
     .container .box .paslauga .boxy .upper li, .container .box .paslauga .boxy .lower li, .container .box .paslauga .boxy .upper .upper1 li, .container .box .paslauga .boxy .upper .upper2 li {
