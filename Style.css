@@ -25,6 +25,26 @@ body {
     min-height: 100vh;
 }
 
+.container .heading, .hero .heading, .containerr .heading, .galerija .heading, .homePage .heading {
+    width: 60%;
+    padding-bottom: 50px;
+}
+
+.container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1{
+    font-size: 3em;
+    font-weight: bolder;
+    border-bottom: 3px solid rgb(84, 177, 177);
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width:1400px) {
+    .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1 {
+        font-size: 5rem;
+    }
+}
+
+
+
 /* Navbar */
 
 .header {
@@ -162,43 +182,11 @@ body {
     #check:checked~.navbar a {
         transform: translateY(0);
     }
-
-    .containerr .boxx .text {
-        justify-content: left;
-    }
-    .containerr .boxx .text .hide {
-        display: block;
-    }
-
-    .containerr .boxx .text img {
-        height: 800px;
-        width: 800px;
-    }
 }
 
-/* galerija */
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 110px 20px 0 20px;
-    max-width: 100%;
-}
 
-.container .heading, .hero .heading, .containerr .heading, .galerija .heading, .homePage .heading {
-    width: 60%;
-    padding-bottom: 50px;
-}
-
-.container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1{
-    font-size: 3em;
-    font-weight: bolder;
-    border-bottom: 3px solid rgb(84, 177, 177);
-    padding-bottom: 20px;
-}
+/* Sveiki atvykę į FrostFire! */
 
 .homePage {
     display: flex;
@@ -224,245 +212,115 @@ body {
 
 
 
-@media only screen and (max-width:1400px) {
-    .container {
-        margin: 60px 10px 0;
-    }
-    .container .box {
-        flex-direction: column;
-    }
 
-    .container .box .dream {
-        width: 100%;
-    }
+/* Kodėl"FrostFire"? */
 
-    .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1 {
-        font-size: 5rem;
-    }
-
-}
-
-.galerija {
-    width: 100%;
+.containerr {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 100px 2%;
+    padding: 0;
+    margin: 140px 0;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(250px, 1fr);
-    grid-template-rows: repeat(250px, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-gap: 30px;
-    }
-
-.gallery img {
-    width: 100%;
-    height: 100%;
-    border-radius: 4%;
-}
-    
-.div1 { grid-area: 1 / 1 / 2 / 2; }
-.div2 { grid-area: 2 / 1 / 3 / 2; }
-.div3 { grid-area: 3 / 1 / 4 / 2; }
-.div4 { grid-area: 3 / 2 / 4 / 3; }
-.div5 { grid-area: 3 / 3 / 4 / 4; }
-.div6 { grid-area: 2 / 3 / 3 / 4; }
-.div7 { grid-area: 1 / 3 / 2 / 4; }
-.div8 { grid-area: 1 / 2 / 3 / 3; }
-/* Kontaktai */ 
-
-.hero {
+.containerr .boxx {
+    width: 85%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
     border: 1px solid black;
-    box-shadow: 10px 10px 10px lightgray;
-    margin: 5%;
-    align-self: center;
-    float: center;
-    background: linear-gradient(white, rgb(190, 253, 253));
+    background: linear-gradient(white,rgb(190, 253, 253));
+    box-shadow: 15px 15px 15px lightgrey;
 }
 
-.hero .boxx {
+.containerr .boxx .text {
+    font-size: 2rem;
+}
+
+.containerr .boxx .text h3 {
+    padding-bottom: 20px;
+}
+
+.containerr .boxx .text .column .row {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    justify-content: space-evenly;
 }
 
-@media only screen and (max-width:1440px) {
-    .hero {
-        justify-content: center;
-        margin: 10px 0;
-        border: none;
-        background: none;
-        box-shadow: none;
-        width: 100%;
-    }
-    .hero .boxx {
+.containerr .boxx .text .column .row .item {
+    width: 100%;
+    height: 100%;
+    margin: 0 20px;
+    padding: 0;
+    align-items: start;
+    justify-content: center;
+}
+
+
+.container .boxx .text .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.containerr .boxx .text .column .row .item img {
+    height: 50px;
+    width: 50px;
+}
+
+@media only screen and (max-width:1400px) {
+    .containerr {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        margin: 215px 0;
     }
-
-    .hero .boxx .box {
+    
+    .containerr .boxx {
+        width: 100%;
         display: flex;
         justify-content: center;
-        margin: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
     }
 
-    .hero .boxx .box form {
-        align-items: left;
-        width: 100%;
+    .containerr .boxx .text {
+        justify-content: left;
+        padding: 10px;
+        font-size: 3.3rem;
     }
 
-    .hero .boxx .box form .row {
+    .containerr .boxx .text .column .row {
         flex-direction: column;
     }
 
-    input {
-        height:80px;
-    }
-
-    label {
-        font-size: 1.5rem;
-    }
-    input, textarea {
-        font-size: 30px;
-        padding: 0;
-    }
-
-    .hero .boxx .box .textt {
-        font-size: 3rem;
-    }
-
-    button {
-        height: 50px;
-        font-size: 1.5rem;
+    .containerr .boxx .text .column .row .item img {
+        height: 80px;
+        width: 80px;
     }
 }
 
-.hero .boxx .box {
-    width: 100%;
-    margin: 20px;
-}
 
-.hero h1 {
+
+
+
+/* Paslaugos */
+
+.container {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 50px 0 50px 0;
     align-items: center;
+    text-align: center;
+    margin: 110px 20px 0 20px;
+    max-width: 100%;
 }
-
-.hero .boxx .box .textt {
-    font-size: 1.5rem;
-}
-
-form {
-    max-width: 750px;
-    margin-bottom: 50px;
-}
-
-.input-group {
-    margin-bottom: 30px;
-    width: 100%;
-    position: relative;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    outline: 0;
-    border: 1px solid black;
-    color: black;
-    background: transparent;
-    font-size: 15px;
-}   
-
-label {
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px;
-    color: black;
-    cursor: text;
-    transition: 0.2s;
-}
-
-button {
-    padding: 10px 0;
-    color: black;
-    outline: none;
-    background: transparent;
-    border: 1px solid black;
-    width: 40%;
-    cursor: pointer;
-}
-
-.hero .boxx .box form input:focus~label, .hero .boxx .box form input:valid~label, .hero .boxx .box form textarea:focus~label, .hero .boxx .box form textarea:valid~label {
-    top: -35px;
-    font-size: 14px;
-}
-
-.row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.row .input-group {
-    flex-basis: 48%;
-}
-
-/* Contacts */
-
-.contacts {
-    display: flex;
-    bottom: 0;
-    justify-content: center;
-    margin: 10px;
-}
-
-.contacts a {
-    margin: 0 5px;
-    font-size: 2rem;
-    color: rgb(0, 0, 0);
-    margin-left: 20px;
-}
-
-
-.info {
-    margin-top: 150px;
-}
-
-.info .heading {
-    width: 50%;
-    padding-bottom: 50px;
-}
-
-.info h1 {
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-    font-size: 3rem;
-    font-weight: bolder;
-    border-bottom: 3px solid black;
-    padding-bottom: 20px;
-}
-
-hr {
-    margin-top: 50px;
-}
-
-
 
 .container .box {
     display: flex;
@@ -569,107 +427,11 @@ hr {
     margin-bottom: 20px;
 }
 
-.success {
-    background: #9fd2a1;
-    padding: 5px 10px;
-    text-align: center;
-    color: #326b07;
-    border-radius: 3px;
-    font-synthesis: 14px;
-    margin-top: 10px;
-}
-
-.containerr {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0;
-    margin: 140px 0;
-}
-
-.containerr .boxx {
-    width: 85%;
-    display: flex;
-    justify-content: center;
-    border: 1px solid black;
-    background: linear-gradient(white,rgb(190, 253, 253));
-    box-shadow: 15px 15px 15px lightgrey;
-}
-
-.containerr .boxx .text {
-    font-size: 2rem;
-}
-
-.containerr .boxx .text h3 {
-    padding-bottom: 20px;
-}
-
-.containerr .boxx .text .column .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.containerr .boxx .text .column .row .item {
-    width: 100%;
-    height: 100%;
-    margin: 0 20px;
-    padding: 0;
-    align-items: start;
-    justify-content: center;
-}
-
-
-.container .boxx .text .column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.containerr .boxx .text .column .row .item img {
-    height: 50px;
-    width: 50px;
-}
-
 @media only screen and (max-width:1400px) {
-    .containerr {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-        padding: 0;
-        margin: 215px 0;
-    }
-    
-    .containerr .boxx {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background: none;
-        border: none;
-        box-shadow: none;
+    .container {
+        margin: 60px 10px 0;
     }
 
-    .containerr .boxx .text {
-        padding: 10px;
-        font-size: 3.3rem;
-    }
-
-    .containerr .boxx .text img {
-        height: 80px;
-        width: 80px;
-    }
-
-    .containerr .boxx .text .column .row {
-        flex-direction: column;
-    }
-}
-
-@media only screen and (max-width:1400px) {
     .container .box {
         display: flex;
         flex-direction: column;
@@ -710,3 +472,262 @@ hr {
         font-size: 1.3rem;
     }
 }
+
+
+
+
+
+
+/* galerija */
+
+
+.galerija {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 2%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(250px, 1fr);
+    grid-template-rows: repeat(250px, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-gap: 30px;
+    }
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4%;
+}
+    
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 2 / 1 / 3 / 2; }
+.div3 { grid-area: 3 / 1 / 4 / 2; }
+.div4 { grid-area: 3 / 2 / 4 / 3; }
+.div5 { grid-area: 3 / 3 / 4 / 4; }
+.div6 { grid-area: 2 / 3 / 3 / 4; }
+.div7 { grid-area: 1 / 3 / 2 / 4; }
+.div8 { grid-area: 1 / 2 / 3 / 3; }
+
+
+
+
+
+
+
+/* Susisiekime! */ 
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px lightgray;
+    margin: 5%;
+    align-self: center;
+    float: center;
+    background: linear-gradient(white, rgb(190, 253, 253));
+}
+
+.hero .boxx {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.hero .boxx .box {
+    width: 100%;
+    margin: 20px;
+}
+
+.hero h1 {
+    justify-content: center;
+    margin: 50px 0 50px 0;
+    align-items: center;
+}
+
+.hero .boxx .box .textt {
+    font-size: 1.5rem;
+}
+
+form {
+    max-width: 750px;
+    margin-bottom: 50px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    width: 100%;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid black;
+    color: black;
+    background: transparent;
+    font-size: 15px;
+}   
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: black;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    width: 40%;
+    cursor: pointer;
+}
+
+.hero .boxx .box form input:focus~label, .hero .boxx .box form input:valid~label, .hero .boxx .box form textarea:focus~label, .hero .boxx .box form textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
+}
+
+.success {
+    background: #9fd2a1;
+    padding: 5px 10px;
+    text-align: center;
+    color: #326b07;
+    border-radius: 3px;
+    font-synthesis: 14px;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:1440px) {
+    .hero {
+        justify-content: center;
+        margin: 10px 0;
+        border: none;
+        background: none;
+        box-shadow: none;
+        width: 100%;
+    }
+    .hero .boxx {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero .boxx .box {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .hero .boxx .box form {
+        align-items: left;
+        width: 100%;
+    }
+
+    .hero .boxx .box form .row {
+        flex-direction: column;
+    }
+
+    input {
+        height:80px;
+    }
+
+    label {
+        font-size: 1.5rem;
+    }
+    input, textarea {
+        font-size: 30px;
+        padding: 0;
+    }
+
+    .hero .boxx .box .textt {
+        font-size: 3rem;
+    }
+
+    button {
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
+
+/* Kontaktai */
+
+.contacts {
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    margin: 10px;
+}
+
+.contacts a {
+    margin: 0 5px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    margin-left: 20px;
+}
+
+
+.info {
+    margin-top: 150px;
+}
+
+.info .heading {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.info h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 3rem;
+    font-weight: bolder;
+    border-bottom: 3px solid black;
+    padding-bottom: 20px;
+}
+
+hr {
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
