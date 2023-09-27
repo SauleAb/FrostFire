@@ -348,7 +348,7 @@ body {
 }
 
 .container .box .bigBox:nth-child(1) .paslauga {
-    height: 550px;
+    height: 700px;
 }
 
 .container .box .paslauga h1 {
@@ -449,6 +449,9 @@ body {
     .container .box .bigBox {
         flex-direction: column;
     }
+    .container .box .bigBox:nth-child(1) .paslauga {
+        height: 1100px;
+    }
 
     .container .box .paslauga .boxy .upper li, .container .box .paslauga .boxy .lower li, .container .box .paslauga .boxy .upper .upper1 li, .container .box .paslauga .boxy .upper .upper2 li {
         font-size: 3rem;
@@ -469,7 +472,7 @@ body {
     }
 
     .container h3 {
-        font-size: 1.3rem;
+        font-size: 1.7rem;
     }
 }
 
