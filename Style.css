@@ -190,9 +190,8 @@ body {
 
 .homePage {
     display: flex;
-    /* background-image: url(images/blue.gif); */
+    background-image: url(images/blue.gif);
     flex-direction: column;
-    background-color: black;
     object-fit: cover;
     justify-content: center;
     text-align: center;
@@ -217,7 +216,7 @@ body {
 
 .homePage .heading {
     align-self: center;
-    color: white;
+    color: black;
     position: absolute;
     font-size: 2rem;
     z-index: 2;
