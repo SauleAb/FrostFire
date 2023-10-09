@@ -10,9 +10,11 @@
     src: url(antaro.otf);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@500&display=swap&effect=fire-animation');
+
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 140px;
+    scroll-padding-top: 110px;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -33,16 +35,17 @@ body {
 .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1{
     font-size: 3em;
     font-weight: bolder;
-    border-bottom: 3px solid rgb(84, 177, 177);
+    border-bottom: 3px solid rgb(136, 22, 107);
     padding-bottom: 20px;
 }
 
 @media only screen and (max-width:1400px) {
     .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1 {
         font-size: 5rem;
+        color: white;
+        border-bottom: 5px solid rgb(136, 22, 107);
     }
 }
-
 
 
 /* Navbar */
@@ -66,7 +69,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(190, 253, 253);
+    background: rgb(206, 255, 255);
     z-index: -1;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
 }
@@ -79,12 +82,12 @@ body {
 .header .logo img{
     color: black;
     text-decoration: none;
-    height: 80px;
+    height: 50px;
 }
 
 .navbar a {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bolder;
     margin: 0;
     padding: 0;
@@ -123,17 +126,17 @@ body {
 @media (max-width: 1400px) {
     .icons {
         display: block;
-        font-size: 7rem;
+        font-size: 6rem;
         padding:10px;
     }
 
     .header .logo img {
-        height: 120px;
+        height: 100px;
     }
 
     .header::before {
-        background: rgb(190, 253, 253);
-        height: 170px;
+        background: rgb(206, 255, 255);
+        height: 150px;
     }
 
     #check:checked~.icons #menu-icon {
@@ -161,16 +164,16 @@ body {
     }
 
     html {
-        scroll-padding-top: 200px;
+        scroll-padding-top: 180px;
     }
 
     #check:checked~.navbar {
-        height: 32rem;
+        height: 31rem;
     }
 
     .navbar a {
         display: block;
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin: 2.8rem 0;
         text-align: center;
     }
@@ -188,43 +191,49 @@ body {
 
 /* Sveiki atvykę į FrostFire! */
 
-.homePage {
+
+ .homePage {
     display: flex;
-    background-image: url(images/blue.gif);
+    /* background-image: url(images/blue.gif); */
     flex-direction: column;
-    object-fit: cover;
     justify-content: center;
     text-align: center;
     height: 100vh;
     width: 100vw;
-    background-repeat: no-repeat;
+    letter-spacing: 10px;
+    /* background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative; */
 }
 
-.homePage .gif {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
+span {
+    font-size: 8rem;
+    color: rgb(206, 255, 255);
 }
 
-.homePage .gif img {
-    height: 50vh;
+#background-video {
     width: 100vw;
-}
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
 
 .homePage .heading {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-self: center;
-    color: black;
+    color: rgb(255, 255, 255);
     position: absolute;
     font-size: 2rem;
     z-index: 2;
 }
 
-.homePage .heading h1 {
-    border-bottom: 8px solid rgb(84, 177, 177);
-}
 
 
 
@@ -238,16 +247,16 @@ body {
     align-items: center;
     text-align: center;
     padding: 0;
-    margin: 140px 0;
+    margin: 140px 20px;
 }
 
 .containerr .boxx {
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: center;
     border: 1px solid black;
-    background: linear-gradient(white,rgb(190, 253, 253));
-    box-shadow: 15px 15px 15px lightgrey;
+    border-radius: 10px;
+    background: linear-gradient(white,rgb(190, 253, 253, .8));
 }
 
 .containerr .boxx .text {
@@ -283,6 +292,7 @@ body {
 .containerr .boxx .text .column .row .item img {
     height: 50px;
     width: 50px;
+    color: white;
 }
 
 @media only screen and (max-width:1400px) {
@@ -308,6 +318,7 @@ body {
 
     .containerr .boxx .text {
         justify-content: left;
+        color: white;
         padding: 10px;
         font-size: 3.3rem;
     }
@@ -338,10 +349,19 @@ body {
     max-width: 100%;
 }
 
+
+.container .heading h1 {
+    color: white;
+}
+
 .container .box {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+}
+
+.container h3 {
+    color: white;
 }
 
 .container .box .bigBox {
@@ -356,10 +376,11 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border: 2px solid black;
-    background: linear-gradient(white, rgb(190, 253, 253));
+    border-radius: 10px;
+    background: linear-gradient(white, rgb(190, 253, 253, .8));
     width: 40%;
     margin: 15px;
-    height: 850px;
+    height: 900px;
     padding: 25px;
 }
 
@@ -426,7 +447,7 @@ body {
 }
 
 .container .box .paslauga .boxy .upper .upper2 ul li {
-    text-align: left;
+    text-align: center;
     list-style-position: inside;
 }
 
@@ -445,7 +466,7 @@ body {
 
 @media only screen and (max-width:1400px) {
     .container {
-        margin: 60px 10px 0;
+        margin: 60px 10px 150px;
     }
 
     .container .box {
@@ -456,9 +477,11 @@ body {
     }
 
     .container .box .paslauga {
-        box-shadow: 0 0 15px 10px lightgray;
+        background: none;
+        border: none;
+        color: white;
         width: 100%;
-        margin: 50px 0;
+        margin: 150px 0;
         height: 100%;
         padding: 0;
     }
@@ -490,6 +513,10 @@ body {
     .container h3 {
         font-size: 1.7rem;
     }
+
+    .container .box .paslauga .boxy .lower .border {
+        display: none;
+    }
 }
 
 
@@ -501,13 +528,17 @@ body {
 
 
 .galerija {
-    width: 100%;
+    margin: 0 20px;
+    border: 2px solid black;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 2%;
+    padding: 0px 2%;
+    background: linear-gradient(white,rgb(190, 253, 253, .5));
+    padding: 20px;
 }
 
 .gallery {
@@ -534,7 +565,12 @@ body {
 .div7 { grid-area: 1 / 3 / 2 / 4; }
 .div8 { grid-area: 1 / 2 / 3 / 3; }
 
-
+@media only screen and (max-width:1440px) {
+    .galerija {
+        background: none;
+        border: none;
+    }
+}
 
 
 
@@ -549,11 +585,11 @@ body {
     flex-direction: column;
     text-align: center;
     border: 1px solid black;
-    box-shadow: 10px 10px 10px lightgray;
+    border-radius: 10px;
     margin: 5%;
     align-self: center;
     float: center;
-    background: linear-gradient(white, rgb(190, 253, 253));
+    background: linear-gradient(white, rgb(190, 253, 253, .8));
 }
 
 .hero .boxx {
@@ -647,6 +683,7 @@ button {
 @media only screen and (max-width:1440px) {
     .hero {
         justify-content: center;
+        color: white;
         margin: 10px 0;
         border: none;
         background: none;
@@ -668,7 +705,7 @@ button {
 
     .hero .boxx .box form {
         align-items: left;
-        width: 100%;
+        width: 100vw;
     }
 
     .hero .boxx .box form .row {
@@ -681,19 +718,24 @@ button {
 
     label {
         font-size: 1.5rem;
+        color: white;
     }
     input, textarea {
         font-size: 30px;
         padding: 0;
+        border: 2px solid white;
     }
 
     .hero .boxx .box .textt {
         font-size: 3rem;
+        color: white;
     }
 
     button {
         height: 50px;
         font-size: 1.5rem;
+        border: 2px solid white;
+        color: white;
     }
 }
 
@@ -713,7 +755,7 @@ button {
 .contacts a {
     margin: 0 5px;
     font-size: 2rem;
-    color: rgb(0, 0, 0);
+    color: white;
     margin-left: 20px;
 }
 
