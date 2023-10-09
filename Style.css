@@ -533,7 +533,6 @@ span {
 
 .galerija {
     margin: 0 20px;
-    border: 2px solid black;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -541,8 +540,11 @@ span {
     justify-content: center;
     text-align: center;
     padding: 0px 2%;
-    background: linear-gradient(white,rgb(190, 253, 253, .5));
     padding: 20px;
+}
+
+.galerija .heading h1 {
+    color: white;
 }
 
 .gallery {
