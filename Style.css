@@ -35,7 +35,7 @@ body {
 .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1{
     font-size: 3em;
     font-weight: bolder;
-    border-bottom: 3px solid rgb(136, 22, 107);
+    border-bottom: 5px solid rgb(0, 0, 0);
     padding-bottom: 20px;
 }
 
@@ -43,7 +43,7 @@ body {
     .container .heading h1, .hero .heading h1, .containerr .heading h1, .galerija .heading h1, .homePage .heading h1 {
         font-size: 5rem;
         color: white;
-        border-bottom: 5px solid rgb(136, 22, 107);
+        border-bottom: 5px solid rgb(0, 0, 0);
     }
 }
 
@@ -60,6 +60,7 @@ body {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    transition: top 0.3s;
 }
 
 .header::before {
@@ -69,9 +70,10 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(206, 255, 255);
+    background: rgba(0, 0, 0, .7);
     z-index: -1;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    transition: top 0.3s;
 }
 
 .header .logo {
@@ -82,7 +84,7 @@ body {
 .header .logo img{
     color: black;
     text-decoration: none;
-    height: 50px;
+    height: 60px;
 }
 
 .navbar a {
@@ -91,7 +93,7 @@ body {
     font-weight: bolder;
     margin: 0;
     padding: 0;
-    color: black;
+    color: white;
     border: 2px black;
     text-decoration: none;
     font-weight: 500;
