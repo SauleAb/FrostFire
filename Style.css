@@ -72,7 +72,6 @@ body {
     height: 100%;
     background: rgba(0, 0, 0, .7);
     z-index: -1;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     transition: top 0.3s;
 }
 
@@ -137,8 +136,8 @@ body {
     }
 
     .header::before {
-        background: rgb(206, 255, 255);
-        height: 150px;
+        background: rgba(0, 0, 0, .7);
+        height: 142px;
     }
 
     #check:checked~.icons #menu-icon {
@@ -159,8 +158,7 @@ body {
         left: 0;
         width: 100%;
         height: 0;
-        background: rgb(206, 255, 255);
-        box-shadow: 0 .5rem 1rem rgb(190, 253, 253);
+        background: rgba(0, 0, 0, .7);
         overflow: hidden;
         transition: .3s ease;
     }
