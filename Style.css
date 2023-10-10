@@ -37,6 +37,11 @@ body {
     font-weight: bolder;
     border-bottom: 5px solid rgb(0, 0, 0);
     padding-bottom: 20px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+.hero .heading h1 {
+    text-shadow: none;
 }
 
 .container, .hero, .containerr, .galerija, .contacts {
@@ -103,6 +108,7 @@ body {
     margin-left: 2.5rem;
     position: relative;
     padding: 0 10px;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 .navbar a:hover {
@@ -212,6 +218,7 @@ body {
 
 span {
     font-size: 8rem;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
     color: rgb(206, 255, 255);
 }
 
