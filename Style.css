@@ -14,7 +14,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 110px;
+    /* scroll-padding-top: 30px; */
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -37,6 +37,10 @@ body {
     font-weight: bolder;
     border-bottom: 5px solid rgb(0, 0, 0);
     padding-bottom: 20px;
+}
+
+.container, .hero, .containerr, .galerija, .homePage, .contacts {
+    margin: 100px 0;
 }
 
 @media only screen and (max-width:1400px) {
@@ -256,7 +260,7 @@ span {
     justify-content: center;
     border: 1px solid black;
     border-radius: 10px;
-    background: linear-gradient(white,rgb(190, 253, 253, .8));
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .containerr .boxx .text {
@@ -377,7 +381,7 @@ span {
     justify-content: space-between;
     border: 2px solid black;
     border-radius: 10px;
-    background: linear-gradient(white, rgb(190, 253, 253, .8));
+    background: rgba(255, 255, 255, 0.7);
     width: 40%;
     margin: 15px;
     height: 900px;
@@ -595,7 +599,7 @@ span {
     margin: 5%;
     align-self: center;
     float: center;
-    background: linear-gradient(white, rgb(190, 253, 253, .8));
+    background: rgba(255, 255, 255, 0.7);
 }
 
 .hero .boxx {
