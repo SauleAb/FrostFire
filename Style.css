@@ -14,7 +14,7 @@
 
 html {
     scroll-behavior: smooth;
-    /* scroll-padding-top: 30px; */
+    scroll-padding-top: 30px;
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -64,7 +64,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1.3rem 10%;
+    padding: 0.2rem 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -551,7 +551,6 @@ span {
     justify-content: center;
     text-align: center;
     padding: 0px 2%;
-    padding: 20px;
 }
 
 .galerija .heading h1 {
