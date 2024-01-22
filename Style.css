@@ -231,15 +231,20 @@ body {
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    color: rgb(255, 255, 255);
     position: absolute;
-    font-size: 2rem;
     z-index: 2;
 }
 
 .homePage .heading .topText {
     border-bottom: none;
     display: inline-block;
+    font-size: 5rem;
+}
+
+.homePage .heading .topText, .homePage .heading .bottomText
+{
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: rgb(206, 255, 255);
 }
 
 
